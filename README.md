@@ -4,6 +4,10 @@
 
 Provider-agnostic Context Usage sidebar for OpenCode TUI.
 
+<p align="center">
+  <img src="images/opencode-context-sidebar.png" alt="Context Usage sidebar preview" width="600">
+</p>
+
 ## Features
 
 - Latest assistant call token totals

@@ -4,6 +4,10 @@
 
 适用于 OpenCode TUI、不依赖特定提供商的上下文用量侧边栏。
 
+<p align="center">
+  <img src="images/opencode-context-sidebar.png" alt="上下文用量侧边栏预览" width="600">
+</p>
+
 ## 功能
 
 - 显示最近一次助手调用的 token 总量
