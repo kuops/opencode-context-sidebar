@@ -1,0 +1,57 @@
+{
+  "name": "opencode-context-sidebar",
+  "version": "1.0.0",
+  "description": "Provider-agnostic context usage sidebar for OpenCode TUI",
+  "type": "module",
+  "main": "./dist/server.js",
+  "types": "./dist/server.d.ts",
+  "exports": {
+    "./server": {
+      "import": "./dist/server.js",
+      "types": "./dist/server.d.ts"
+    },
+    "./tui": {
+      "import": "./dist/tui.js",
+      "types": "./dist/tui.d.ts",
+      "config": {
+        "enabled": true
+      }
+    }
+  },
+  "scripts": {
+    "build": "tsc && node build.tui.mjs",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "@opencode-ai/plugin": ">=1.18.0",
+    "@opentui/core": ">=0.4.0",
+    "@opentui/solid": ">=0.4.0",
+    "solid-js": ">=1.9.0"
+  },
+  "devDependencies": {
+    "@opencode-ai/plugin": "latest",
+    "@opentui/core": "0.5.1",
+    "@opentui/solid": "0.5.1",
+    "@types/node": "^25.6.0",
+    "esbuild": "^0.25.12",
+    "esbuild-plugin-solid": "^0.5.0",
+    "solid-js": "^1.9.12",
+    "typescript": "^5.8.0"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/kuops/opencode-context-sidebar.git"
+  },
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "tui",
+    "context",
+    "tokens",
+    "cache"
+  ],
+  "files": [
+    "dist"
+  ]
+}
